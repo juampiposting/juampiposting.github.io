@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>andreoliBot</title>
+        <script>
+        function myFunction() {
+          function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+          }
+          var ar1 = [
+            "Ella está rota,", "Ella está loca,", "Ella no explota,", "Ella es una roca,", "Ella está en otra,", "Ella se conforma,", "Ella te provoca,", "Ella se desboca,", "Ella se agota,", "Ella se sofoca,"
+          ]
+          var ar2 = [
+            "nunca cree en la derrota,", "grita y se alborota,", "espera un beso a cuenta gotas,", "la suerte no la toca,", "aunque entiende se equivoca,"
+          ]
+          var ar3 = [ "su sonrisa descoloca,", "vuela libre pero choca,", "tranquila no mira la hora,", "su desdicha nunca es poca,", "se desprende y te atesora,"
+          ]
+          var ar4 = [ "su torpeza te enamora.", "nunca avisa cuando llora.", "tiene miedo de estar sola.", "nada, pero nada la demora."
+          ]
+           document.getElementById("demo").innerHTML =  ((ar1[getRandomInt(0,10)]) + "<br>" + (ar2[getRandomInt(0,5)]) + "<br>" + (ar3[getRandomInt(0,5)]) + "<br>" + (ar4[getRandomInt(0,4)]));
+          }
+
+        </script>
+        <style>
+
+            html, body {
+                width: 60%;
+                height: 60%;
+                margin: 0;
+                padding: 0;
+                background-color: green;
+            }
+            #container {
+                width: inherit;
+                height: inherit;
+                margin: 0;
+                padding: 0;
+                background-color: pink;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            p {text-align: center;}
+            div {text-align: center;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1><b>andreoliBot.</b></h1>
+        </div>
+        <p id="asd">Para los amantes de la poesia, les presento el milagroso andreoliBot. Un bot hecho a partir de poemas de nuestro mesias nicolas andreoli. <br>
+          para deleitarte, tan solo hace falta que apretes el boton:</p>
+        <img src="and.png" width="500" height="200">>
+        <p id="demo"> </p>
+        <button type="button" onclick="myFunction()">Generar</button>
+    </body>
+</html>
